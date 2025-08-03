@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=67", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tshell"
+version = "0.1.0"
+description = "Simple AI shell tool"
+authors = [{name="AI", email="ai@example.com"}]
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+dependencies = ["openai>=0.28"]
+
+[project.scripts]
+tshell = "tshell.cli:main"
